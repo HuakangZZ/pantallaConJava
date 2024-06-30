@@ -26,6 +26,11 @@ public class Ventana extends JFrame {
         JLabel etiqueta = new JLabel();
         etiqueta.setText("Hola");//Colocamos el texto a la etiqueta
         etiqueta.setBounds(10,10,50,30);
+        etiqueta.setOpaque(true);//Desactivamos los valores por defecto de la etiqueta
+        etiqueta.setBackground(Color.black);//Establecemos el color de fondo de la etiqueta
+        etiqueta.setForeground(Color.WHITE);
+        etiqueta.setHorizontalAlignment(SwingConstants.CENTER);//Posicionamos la letra
+        etiqueta.setFont(new Font("arial",Font.BOLD,20));//Agregamos el estilo de la letra
         panel.add(etiqueta);//Agregamos la etiqueta al panel
     }
 }
